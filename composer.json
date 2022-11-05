@@ -1,0 +1,41 @@
+{
+    "name": "inanepain/polyfill",
+    "description": "Various Polyfill functions for php backwards compatibility.",
+    "type": "library",
+    "license": "UNLICENSE",
+    "homepage": "http://vaieen.local:3000/inane/polyfill",
+    "readme": "README.md",
+    "authors": [
+        {
+            "name": "Philip Michael Raab",
+            "email": "peep@inane.co.za",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "peep@inane.co.za",
+        "issues": "http://vaieen.local:3000/iane"
+    },
+    "keywords": [
+        "inane",
+        "polyfill"
+    ],
+    "autoload": {
+        "files": [
+            "src/bootstrap.php"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "optimize-autoloader": true,
+        "discard-changes": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.1",
+        "inanepain/stdlib": "*",
+        "psr/log": "dev-master"
+    },
+    "require-dev": {}
+}

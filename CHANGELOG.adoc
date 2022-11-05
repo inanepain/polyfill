@@ -1,0 +1,22 @@
+= Changelog: File
+:author: Philip Michael Raab
+:email: <peep@inane.co.za>
+:homepage: http://vaieen.local
+:revnumber: 0.1.0
+:revdate: 2022-11-05
+:experimental:
+:hide-uri-scheme:
+:table-stripes: even
+:icons: font
+:source-highlighter: highlight.js
+:sectnums: |,all|
+:toclevels: 3
+:toc: auto
+
+ version: $Id: 0.1.0-4$ ($Date: Tue Oct 18 14:37:22 2022 +0200$)
+
+== History
+
+=== 0.1.0 @2022 Nov 05
+
+* initial

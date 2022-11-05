@@ -1,0 +1,35 @@
+= PHP: Polyfills
+:author: Philip Michael Raab
+:email: <peep@inane.co.za>
+:homepage: http://vaieen.local
+:revnumber: 0.1.0
+:revdate: 2022-11-05
+:experimental:
+:hide-uri-scheme:
+:table-stripes: even
+:icons: font
+:source-highlighter: highlight.js
+:sectnums: |,all|
+:toclevels: 3
+:toc: auto
+
+Various Polyfill functions for php backwards compatibility.
+
+.polyfill todo list
+* [ ] the `array_column`, boolval, json_last_error_msg and hash_pbkdf2 functions introduced in PHP 5.5;
+* [ ] the `is_iterable` function introduced in PHP 7.1;
+* [ ] the `enum_exists` function introduced in PHP 8.1;
+* [ ] the `spl_object_id` and `stream_isatty` functions introduced in PHP 7.2;
+* [ ] the `hrtime` function introduced in PHP 7.3;
+* [ ] the `get_mangled_object_vars`, `mb_str_split` and `password_algos` functions introduced in PHP 7.4;
+* [ ] the fdiv function introduced in PHP 8.0;
+* [ ] the `get_debug_type` function introduced in PHP 8.0;
+* [ ] the `get_resource_id` function introduced in PHP 8.0;
+* [ ] the `Attribute` class introduced in PHP 8.0;
+* [ ] the `Stringable` interface introduced in PHP 8.0;
+* [ ] the `PhpToken` class introduced in PHP 8.0 when * [ ] the tokenizer extension is enabled;
+* [x] the `is_countable` function introduced in PHP 7.3;
+* [x] the `array_is_list` function introduced in PHP 8.1;
+* [x] the `array_key_first` and `array_key_last` functions introduced in PHP 7.3;
+* [x] the `str_contains` function introduced in PHP 8.0;
+* [x] the `str_starts_with` and `str_ends_with` functions introduced in PHP 8.0;
