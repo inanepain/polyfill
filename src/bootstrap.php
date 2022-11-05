@@ -12,7 +12,7 @@
  * @license UNLICENSE doc
  * @license https://github.com/inanepain/stdlib/raw/develop/UNLICENSE UNLICENSE
  *
- * @version $Id$
+ * @version $Id: fatal: No names found, cannot describe anything.$
  * $Date$
  */
 
