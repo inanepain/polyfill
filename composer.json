@@ -3,7 +3,7 @@
     "description": "Various Polyfill functions for php backwards compatibility.",
     "type": "library",
     "license": "UNLICENSE",
-    "homepage": "http://vaieen.local:3000/inane/polyfill",
+    "homepage": "https://vaieen.local:3000/inane/polyfill",
     "readme": "README.adoc",
     "authors": [
         {
@@ -14,13 +14,19 @@
     ],
     "support": {
         "email": "peep@inane.co.za",
-        "issues": "http://vaieen.local:3000/iane"
+        "issues": "https://vaieen.local:3000/inane/polyfill/issues"
     },
     "keywords": [
         "inane",
-        "polyfill"
+        "polyfill",
+        "shim",
+        "compatibility",
+        "portable"
     ],
     "autoload": {
+        "psr-4": {
+            "Inane\\Polyfill\\": "src/"
+        },
         "files": [
             "src/bootstrap.php"
         ]
@@ -33,7 +39,7 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "php": ">=8.1",
+        "php": ">=5.0",
         "inanepain/stdlib": "*",
         "psr/log": "dev-master"
     },

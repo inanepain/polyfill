@@ -1,9 +1,9 @@
-= Changelog: File
+= Changelog: Polyfill
 :author: Philip Michael Raab
 :email: <peep@inane.co.za>
 :homepage: http://vaieen.local
-:revnumber: 0.1.0
-:revdate: 2022-11-05
+:revnumber: 0.2.0
+:revdate: 2023-06-25
 :experimental:
 :hide-uri-scheme:
 :table-stripes: even
@@ -13,9 +13,17 @@
 :toclevels: 3
 :toc: auto
 
- version: $Id: 0.1.0-4$ ($Date: Tue Oct 18 14:37:22 2022 +0200$)
+ version: $Id$ ($Date$)
 
 == History
+
+=== 0.2.0 @2023 Jun 25
+
+* Split polyfills into separate files based on php version
+* polyfills got @see link to online php manual page for function
+* new: php 7.4.0 - function `password_algos`
+* new: php 8.0.0 - class `Stringable`
+* new: php 8.0.0 - class `PhpToken`
 
 === 0.1.0 @2022 Nov 05
 
