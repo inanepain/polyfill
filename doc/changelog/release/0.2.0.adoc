@@ -1,0 +1,6 @@
+= 0.2.0 (2023 Jun 23)
+:revnumber: 0.2.0
+:revdate: 2023-06-23
+
+* Next release.
+

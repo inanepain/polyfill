@@ -1,47 +1,94 @@
 {
-    "name": "inanepain/polyfill",
-    "description": "Various Polyfill functions for php backwards compatibility.",
-    "type": "library",
-    "license": "UNLICENSE",
-    "homepage": "https://vaieen.local:3000/inane/polyfill",
-    "readme": "README.adoc",
-    "authors": [
-        {
-            "name": "Philip Michael Raab",
-            "email": "peep@inane.co.za",
-            "role": "Developer"
-        }
-    ],
-    "support": {
-        "email": "peep@inane.co.za",
-        "issues": "https://vaieen.local:3000/inane/polyfill/issues"
-    },
-    "keywords": [
-        "inane",
-        "polyfill",
-        "shim",
-        "compatibility",
-        "portable"
-    ],
-    "autoload": {
-        "psr-4": {
-            "Inane\\Polyfill\\": "src/"
-        },
-        "files": [
-            "src/bootstrap.php"
-        ]
-    },
-    "config": {
-        "preferred-install": "dist",
-        "optimize-autoloader": true,
-        "discard-changes": true,
-        "sort-packages": true
-    },
-    "minimum-stability": "dev",
-    "require": {
-        "php": ">=5.0",
-        "inanepain/stdlib": "*",
-        "psr/log": "dev-master"
-    },
-    "require-dev": {}
+	"name": "inanepain/polyfill",
+	"description": "Various Polyfill functions for php backwards compatibility.",
+	"type": "library",
+	"license": "UNLICENSE",
+	"homepage": "https://github.com/inane/polyfill",
+	"readme": "README.adoc",
+	"authors": [
+		{
+			"name": "Philip Michael Raab",
+			"email": "peep@inane.co.za",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"email": "peep@inane.co.za",
+		"issues": "https://github.com/inane/polyfill/issues"
+	},
+	"keywords": [
+		"inane",
+		"polyfill",
+		"shim",
+		"compatibility",
+		"portable"
+	],
+	"autoload": {
+		"psr-4": {
+			"Inane\\Polyfill\\": "src/"
+		},
+		"files": [
+			"src/bootstrap.php"
+		]
+	},
+	"config": {
+		"preferred-install": "dist",
+		"optimize-autoloader": true,
+		"discard-changes": true,
+		"sort-packages": true
+	},
+	"minimum-stability": "dev",
+	"require": {
+		"php": ">=5.0",
+		"inanepain/stdlib": "*",
+		"psr/log": "dev-master"
+	},
+	"require-dev": {},
+	"scripts": {
+		"mk-doc-dir": [
+			"mkdir -p doc/{changelog,readme}",
+			"mkdir -p doc/changelog/release",
+			"mkdir -p doc/readme/part",
+			"touch doc/{changelog,readme}/index.adoc",
+			"touch doc/changelog/release/0.0.0.adoc",
+			"touch doc/readme/part/install.adoc"
+		],
+		"build": [
+			"echo \"Library: inanepain/$(basename $(pwd))\"",
+			"echo build: all...",
+			"@build-changelog",
+			"@build-readme",
+			"echo build: done!"
+		],
+		"build-win": [
+			"@build-changelog-win",
+			"@build-readme-win"
+		],
+		"build-changelog": [
+			"echo building: changelog...",
+			"rm -f CHANGELOG.adoc",
+			"asciidoctor-reducer -o CHANGELOG.adoc doc/changelog/index.adoc",
+			"asciidoctor -b docbook CHANGELOG.adoc",
+			"rm -f CHANGELOG.xml"
+		],
+		"build-changelog-win": [
+			"del CHANGELOG.adoc",
+			"asciidoctor-reducer -o CHANGELOG.adoc doc/changelog/index.adoc",
+			"asciidoctor -b docbook CHANGELOG.adoc",
+			"del CHANGELOG.xml"
+		],
+		"build-readme": [
+			"echo building: readme...",
+			"rm -f README.adoc",
+			"asciidoctor-reducer -o README.adoc doc/readme/index.adoc",
+			"asciidoctor -b docbook README.adoc",
+			"rm -f README.xml"
+		],
+		"build-readme-win": [
+			"del README.adoc",
+			"asciidoctor-reducer -o README.adoc doc/readme/index.adoc",
+			"asciidoctor -b docbook README.adoc",
+			"del README.xml"
+		]
+	}
 }

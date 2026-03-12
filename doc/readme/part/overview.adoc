@@ -1,48 +1,3 @@
-= inanepain/polyfill
-:author: Philip Michael Raab
-:email: <philip@cathedral.co.za>
-:description: Various Polyfill functions for php backwards compatibility.
-:keywords: inanepain, library, polyfill
-:homepage: https://github.com/inanepain/polyfill
-:revnumber: 0.2.0
-:revdate: 2025-06-23
-:experimental:
-:hide-uri-scheme:
-:icons: font
-:source-highlighter: highlight.js
-:toc: left
-:sectanchors:
-:idprefix: topic-
-:idseparator: -
-:pkg-vendor: inanepain
-:pkg-name: polyfill
-:pkg-id: {pkg-vendor}/{pkg-name}
-
-
-== image:./icon.png[title={pkg-id},25] {pkg-id}
-
-{description}
-
-:sectnums:
-
-<<<
-
-:leveloffset: +1
-
-= Install
-
-.composer
-[source,shell]
-====
-composer require {pkg-id}
-====
-
-:leveloffset!:
-
-<<<
-
-:leveloffset: +1
-
 = Overview
 
 Various Polyfill functions for php backwards compatibility.
@@ -65,5 +20,3 @@ Various Polyfill functions for php backwards compatibility.
 * [x] the `array_key_first` and `array_key_last` functions introduced in PHP 7.3;
 * [x] the `str_contains` function introduced in PHP 8.0;
 * [x] the `str_starts_with` and `str_ends_with` functions introduced in PHP 8.0;
-
-:leveloffset!:
