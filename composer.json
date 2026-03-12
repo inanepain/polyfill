@@ -18,10 +18,8 @@
 	},
 	"keywords": [
 		"inane",
-		"polyfill",
-		"shim",
-		"compatibility",
-		"portable"
+		"inanepain",
+		"polyfill"
 	],
 	"autoload": {
 		"psr-4": {
