@@ -3,3 +3,9 @@
 :revdate: 2026-XX-XX
 :revremark: -dev
 :version-label: Unconfirmed
+
+* *new* php 8.3
+* stubs:
+** php 8.2
+** php 8.4
+** php 8.5

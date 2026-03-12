@@ -39,7 +39,9 @@
 	"require": {
 		"php": ">=5.0",
 		"inanepain/stdlib": "*",
-		"psr/log": "dev-master"
+		"psr/log": "dev-master",
+        "ext-mbstring": "*",
+        "ext-ldap": "*"
 	},
 	"require-dev": {},
 	"scripts": {
