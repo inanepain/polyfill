@@ -34,5 +34,5 @@ if (PHP_VERSION < '8.0.0') require_once(__DIR__ . \DIRECTORY_SEPARATOR . 'compat
 if (PHP_VERSION < '8.1.0') require_once(__DIR__ . \DIRECTORY_SEPARATOR . 'compat/php81x.php');
 //if (PHP_VERSION < '8.2.0') require_once(__DIR__ . \DIRECTORY_SEPARATOR . 'compat/php82x.php');
 if (PHP_VERSION < '8.3.0') require_once(__DIR__ . \DIRECTORY_SEPARATOR . 'compat/php83x.php');
-//if (PHP_VERSION < '8.4.0') require_once(__DIR__ . \DIRECTORY_SEPARATOR . 'compat/php84x.php');
+if (PHP_VERSION < '8.4.0') require_once(__DIR__ . \DIRECTORY_SEPARATOR . 'compat/php84x.php');
 //if (PHP_VERSION < '8.5.0') require_once(__DIR__ . \DIRECTORY_SEPARATOR . 'compat/php85x.php');

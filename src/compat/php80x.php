@@ -293,3 +293,35 @@ if (!class_exists('PhpToken')) {
 		}
 	}
 }
+
+/**
+ * Polyfill: ValueError
+ *
+ * @since 8.0.0
+ */
+if (!class_exists('ValueError')) {
+    class ValueError extends Error {}
+}
+
+/**
+ * Polyfill: UnhandledMatchError
+ *
+ * @since 8.0.0
+ */
+if (!class_exists('UnhandledMatchError')) {
+    class UnhandledMatchError extends Error {}
+}
+
+/**
+ * Polyfill: Stringable
+ *
+ * @since 8.0.0
+ */
+if (!class_exists('Stringable')) {
+    interface Stringable {
+        /**
+         * @return string
+         */
+        public function __toString();
+    }
+}
