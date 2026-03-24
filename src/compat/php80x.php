@@ -317,7 +317,7 @@ if (!class_exists('UnhandledMatchError')) {
  *
  * @since 8.0.0
  */
-if (!class_exists('Stringable')) {
+if (!interface_exists('Stringable')) {
     interface Stringable {
         /**
          * @return string
