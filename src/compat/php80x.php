@@ -211,7 +211,7 @@ if (!class_exists('PhpToken')) {
 		 * 
 		 * Whether the token has the given ID, the given text, or has an ID/text part of the given array.
 		 */
-		public function is(int|string|array  $kind): bool {
+		public function is($kind): bool {
 			if (is_array($kind)) {
 				foreach ($kind as $singleKind) {
 					if (is_string($singleKind)) {
