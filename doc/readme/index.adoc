@@ -1,4 +1,5 @@
 = inanepain/polyfill
+// tag::tagConfig[]
 :author: Philip Michael Raab
 :email: <philip@cathedral.co.za>
 :description: Various Polyfill functions for php backwards compatibility.
@@ -17,6 +18,7 @@
 :pkg-vendor: inanepain
 :pkg-name: polyfill
 :pkg-id: {pkg-vendor}/{pkg-name}
+// end::tagConfig[]
 
 
 == image:./icon.png[title={pkg-id},25] {pkg-id}
@@ -32,4 +34,3 @@ include::part/install.adoc[leveloffset=+1]
 <<<
 
 include::part/overview.adoc[leveloffset=+1]
-
