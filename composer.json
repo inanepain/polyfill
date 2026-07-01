@@ -22,9 +22,6 @@
 		"polyfill"
 	],
 	"autoload": {
-		"psr-4": {
-			"Inane\\Polyfill\\": "src/"
-		},
 		"files": [
 			"src/bootstrap.php"
 		]
