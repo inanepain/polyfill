@@ -34,20 +34,20 @@ git-push-all: (_start "Push All") && (_done "Push All")
 #*********************************************
 #### PHP
 ##############################################
-# generate php doc (v2) (all, cache, html)
+# generate php part (v2) (all, cache, html)
 php-doc clear="all":
 	#!/usr/bin/env zsh
 	if [ -d .phpdoc ] && [[ "{{clear}}" = "all" || "{{clear}}" = "cache" ]]; then
 		echo "\tCleaning: cache..."
 		rm -fr .phpdoc
 	fi
-	if [ -d doc/api ] && [[ "{{clear}}" = "all" || "{{clear}}" = "html" ]]; then
+	if [ -d phpdoc ] && [[ "{{clear}}" = "all" || "{{clear}}" = "html" ]]; then
 		echo "\tCleaning: html..."
-		rm -fr doc/api
+		rm -fr phpdoc
 	fi
 
-	mkdir -p doc/api
-	phpdoc -d src -t doc/api --title="{{project}}" --defaultpackagename="Inane"
+	mkdir -p phpdoc
+	phpdoc -d src -t phpdoc --title="{{project}}" --defaultpackagename="Inane"
 
 #*********************************************
 #### DOCUMENTATION: README
