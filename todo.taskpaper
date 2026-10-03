@@ -1,5 +1,8 @@
 inanepain/polyfill:
 	Outstanding php versions that still require polyfills.
-	- php 8.2
-	- php 8.4
-	- php 8.5
+	- git-attributes
+	- tests: create test case. @PHPUnit
+	PHP Versions:
+		- php 8.2
+		- php 8.4
+		- php 8.5
